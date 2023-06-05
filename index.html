@@ -1,19 +1,41 @@
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MyQuiz Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyD_1c9HS4rhzHcEDuTHBh7IBeI0m8ao4jo",
-    authDomain: "passeio-de-balao-de-ar-859ff.firebaseapp.com",
-    projectId: "passeio-de-balao-de-ar-859ff",
-    storageBucket: "passeio-de-balao-de-ar-859ff.appspot.com",
-    messagingSenderId: "689528908831",
-    appId: "1:689528908831:web:64ae96eae3e4af81f4392a"
-  };
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyD_1c9HS4rhzHcEDuTHBh7IBeI0m8ao4jo",
+        authDomain: "passeio-de-balao-de-ar-859ff.firebaseapp.com",
+        projectId: "passeio-de-balao-de-ar-859ff",
+        storageBucket: "passeio-de-balao-de-ar-859ff.appspot.com",
+        messagingSenderId: "689528908831",
+        appId: "1:689528908831:web:64ae96eae3e4af81f4392a"
+      };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
+</html>
